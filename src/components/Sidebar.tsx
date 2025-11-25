@@ -25,7 +25,7 @@ const menuItems = [
 
 const Sidebar: Component = () => {
   return (
-    <div
+    <nav
       id='menu'
       class='bg-gray-900 min-h-screen z-10 text-slate-300 w-96 left-0 h-screen overflow-y-scroll'
     >
@@ -51,7 +51,7 @@ const Sidebar: Component = () => {
       <div id='nav' class='w-full px-6'>
         <For each={menuItems}>{(item) => <SidebarMenuItem {...item} />}</For>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Sidebar;
