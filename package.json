@@ -21,5 +21,8 @@
   },
   "trustedDependencies": [
     "@parcel/watcher"
-  ]
+  ],
+  "devDependencies": {
+    "@iconify-icon/solid": "^3.0.3"
+  }
 }

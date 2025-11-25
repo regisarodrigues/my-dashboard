@@ -1,3 +1,5 @@
+import { Navigate } from '@solidjs/router';
+
 export default function HomePage() {
-  return <h1>Home Page</h1>;
+  return <Navigate href='/dashboard/counter' />;
 }
