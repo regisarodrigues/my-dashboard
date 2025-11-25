@@ -16,7 +16,7 @@ const menuItems = [
     subTitle: 'Simples Contador',
   },
   {
-    path: '/dashboard/pokemon',
+    path: '/dashboard/pokemons',
     icon: 'ic:twotone-catching-pokemon',
     title: 'Pokemon',
     subTitle: 'Lista de Pokemons',
