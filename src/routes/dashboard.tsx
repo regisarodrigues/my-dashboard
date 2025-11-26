@@ -3,7 +3,7 @@ import Sidebar from '~/components/Sidebar';
 
 const DashboardLayout: Component = (props: ParentProps) => {
   return (
-    <div class='bg-slate-100 overflow-y-scroll w-screen h-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white'>
+    <div class='bg-gray-300 overflow-y-scroll w-screen h-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white'>
       <div class='flex'>
         {/* Menu */}
         <Sidebar />
