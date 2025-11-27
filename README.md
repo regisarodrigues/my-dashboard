@@ -1,32 +1,88 @@
-# SolidStart
+# SolidStart Dashboard (Bun + SolidStart 2025)
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+Este é um projeto desenvolvido com **SolidStart**, **Vinxi** e **Bun**, inspirado no estilo do curso  
+**[“Next.js: El framework de React para producción”](https://www.udemy.com/course/nextjs-fh/)** de Fernando Herrera.
 
-## Creating a project
+O objetivo é criar uma base sólida (sem trocadilhos ) para projetos modernos usando **SSR**, **rotas dinâmicas**, **queries com cache**, **Suspense**, **Streams**, e desenvolvimento rápido com **Bun**.
 
-```bash
-# create a new project in the current directory
-npm init solid@latest
+---
 
-# create a new project in my-app
-npm init solid@latest my-app
+## Tecnologias Utilizadas
+
+- **SolidStart 1.1.0+** – Framework fullstack para SolidJS com SSR e rotas
+- **SolidJS** – Biblioteca reativa ultrarrápida
+- **Vinxi** – Bundler e desenvolvimento do SolidStart
+- **Bun** – Runtime + gerenciador de pacotes super rápido
+- **TypeScript** – Tipagem forte para melhor DX
+- **TailwindCSS** – Estilização utilitária moderna
+- **Fetch API** – Consumo de APIs externas (ex: PokéAPI)
+- **Arquitetura por pastas** (`routes`, `components`, `types`, `lib`, `server`)
+- **Queries com Cache** (`query()` + `createAsync()`)
+- **Suspense** – Carregamento assíncrono fluido
+- **ChatGPT (Assistente de Desenvolvimento)** – Auxílio na documentação, estrutura e arquitetura do projeto
+
+---
+
+## Estrutura do Projeto
+
+```
+src/
+ ├ components/    # Componentes reutilizáveis
+ ├ routes/        # Rotas (SSR, ações, loaders)
+ ├ types/         # Tipos e interfaces TypeScript
+ ├ lib/           # Funções auxiliares e utils
+ ├ server/        # APIs, handlers, server-functions
+ └ app.tsx        # Configuração raiz do app
 ```
 
-## Developing
+---
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Como iniciar o projeto
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+git clone <URL_DO_SEU_REPO>
+cd my-dashboard
+bun install
+bun dev
 ```
 
-## Building
+---
 
-Solid apps are built with _presets_, which optimise your project for deployment to different environments.
+## Build para produção
 
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different preset, add it to the `devDependencies` in `package.json` and specify in your `app.config.js`.
+```bash
+bun run build
+bun run start
+```
 
-## This project was created with the [Solid CLI](https://github.com/solidjs-community/solid-cli)
+---
+
+## Features importantes deste projeto
+
+- Rotas dinâmicas
+- Queries com cache
+- SSR + Suspense
+- Organização profissional em `/types`
+
+---
+
+## Scripts úteis
+
+| Comando         | Descrição                                 |
+| --------------- | ----------------------------------------- |
+| `bun dev`       | Inicia o servidor em modo desenvolvimento |
+| `bun run build` | Gera build de produção                    |
+| `bun run start` | Roda o servidor em modo produção          |
+
+---
+
+## Licença
+
+Livre para estudos e modificação.
+
+---
+
+## Autor
+
+Feito por **Regis Adriano Rodrigues**,  
+baseado em práticas do curso de Fernando Herrera.
