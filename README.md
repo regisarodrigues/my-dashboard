@@ -30,8 +30,6 @@ src/
  ├ components/    # Componentes reutilizáveis
  ├ routes/        # Rotas (SSR, ações, loaders)
  ├ types/         # Tipos e interfaces TypeScript
- ├ lib/           # Funções auxiliares e utils
- ├ server/        # APIs, handlers, server-functions
  └ app.tsx        # Configuração raiz do app
 ```
 
