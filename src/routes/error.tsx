@@ -3,7 +3,6 @@ import { Component } from 'solid-js';
 interface RootErrorProps {
   error: Error;
 }
-console.log('CARREGOU MINHA PÁGINA DE ERRO PERSONALIZADA');
 
 const RootError: Component<RootErrorProps> = (props) => {
   return (
